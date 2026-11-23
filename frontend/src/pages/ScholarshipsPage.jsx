@@ -36,7 +36,7 @@ const ScholarshipsPage = () => {
             scholarship.eligibility.toLowerCase().includes(search.toLowerCase());
         const matchesCategory =
             selectedCategory === "All" ||
-            scholarship.category === selectedCategory;
+            scholarship.category?.includes(selectedCategory);
         
         return matchesSearch && matchesCategory;
     });
