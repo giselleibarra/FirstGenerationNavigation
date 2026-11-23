@@ -148,7 +148,7 @@
     text-decoration: underline;
 }
 
-.application-resource::hover {
+.application-resource:hover {
     color: var(--primary-color);
 }
 
