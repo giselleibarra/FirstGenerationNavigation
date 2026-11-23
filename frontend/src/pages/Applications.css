@@ -1,0 +1,213 @@
+:root {
+  --background-color: #EEF7F7;
+  --secondary-color: #F3E383;
+  --primary-color: #8893F0;
+}
+
+.applications-page {
+    min-height: calc(100vh - 67px);
+    padding: 40px 40px 60px;
+    background-color: var(--background-color);
+    color: #253244;
+}
+
+.applications-container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.applications-heading {
+    margin-bottom: 30px;
+}
+
+.applications-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 13px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.applications-heading h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.application-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.application-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #D8E6E9;
+    border-radius: 22px;
+    padding: 26px;
+    min-width: 0;
+}
+
+.application-card-heading {
+    margin-bottom: 20px;
+}
+
+.application-card-heading h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.application-card-heading p {
+    font-size: 13px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.application-info {
+    background-color: #EDF6F7;
+    border-radius: 14px;
+    padding: 15px 17px;
+    margin-bottom: 22px;
+}
+
+.application-info p {
+    font-size: 13px;
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+
+.application-info p:last-child {
+    margin-bottom: 0;
+}
+
+.application-info span {
+    margin-right: 6px;
+}
+
+.application-info a {
+    color: #253244;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.application-info a:hover {
+    text-decoration: underline;
+}
+
+.application-tips {
+    flex: 1;
+}
+
+.application-tips h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 14px;
+}
+
+.application-tips h3 span {
+    color: var(--primary-color);
+    margin-right: 7px;
+}
+
+.application-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.application-tips li {
+    position: relative;
+    font-size: 13px;
+    line-height: 1.55;
+    padding-left: 16px;
+    margin-bottom: 12px;
+}
+
+.application-tips li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.application-resource {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 20px;
+    color: #3448A5;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.application-resource::hover {
+    color: var(--primary-color);
+}
+
+.application-reminder {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    border: 1px solid #D8E6E9;
+    border-radius: 22px;
+    padding: 24px 28px;
+    margin-top: 36px;
+}
+
+.reminder-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    background-color: #FAF6D1;
+    color: var(--secondary-color);
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.application-reminder p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .application-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .application-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .applications-page {
+        padding: 28px 16px 60px;
+    }
+
+    .applications-heading h1 {
+        font-size: 26px;
+    }
+
+    .application-reminder {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .application-reminder p {
+        font-size: 13px;
+    }
+}

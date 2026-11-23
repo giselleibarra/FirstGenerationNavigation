@@ -4,6 +4,8 @@ import ScholarshipsPage from "./pages/ScholarshipsPage";
 import FinancialAid from "./pages/FinancialAid";
 import TermsPage from "./pages/TermsPage";
 import TestPrep from "./pages/TestPrep";
+import Roadmap from "./pages/Roadmap";
+import ApplicationsPage from "./pages/ApplicationsPage";
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
         <Route path="/financial-aid" element={<FinancialAid />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/test-prep" element={<TestPrep />} />
+        <Route path="/roadmap" element={<Roadmap />} />
+        <Route path="/applications" element={<ApplicationsPage />} />
       </Routes>
     </div>
   )

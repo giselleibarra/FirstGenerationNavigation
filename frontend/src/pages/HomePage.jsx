@@ -6,8 +6,8 @@ const homepage = () => {
           <div className="home-image-section">
             <div className="image-background"></div>
 
-            <span className="sparkle sparkle-one">✦</span>
-            <span className="sparkle sparkle-two">✦</span>
+            <span className="sparkle sparkle-one">✧</span>
+            <span className="sparkle sparkle-two">✧</span>
             <img
               src="/graduation.jpg"
               alt="Students celebrating their graduation"
